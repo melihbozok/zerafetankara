@@ -67,6 +67,7 @@ font-size:12px;}
     border-radius: 15px;
     background: #eee; 
 }
+
 .search-group input {
     height: 35px;
     border-radius: 25px 0 0 25px;
@@ -86,6 +87,9 @@ font-size:12px;}
     background:  #fff;
     color: #fff;
 }
+.searchAlt .search-group-left input {
+    background:#eee;
+}
 .search-group-right {
     width: 35px;
     text-align: center;
@@ -99,6 +103,57 @@ font-size:12px;}
 .search-group-right .kapa {
     color:#fff;
 }
+
+/** MAP **/
+.zerafetMap {
+    width:100%;
+}
+.contactBorder {
+    border:3px solid #eee;
+    padding:35px;
+    
+}
+.contactBorder h5 {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    text-align: center;
+    margin:0 0 30px 0;
+}
+.contactBorder ul {list-style-type:none;font-family:'Raleway' sans-serif!important;}
+.contactBorder li {
+    margin: 0 0 12px 0;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+}
+.contactBorder i {position:relative;display:inline-block;margin:0 15px 0 0;color:#cf5375;}
+.contactBorder .form-control {    background: none;
+    border: none;
+    border-bottom: 1px solid #bbbbbb;
+    border-radius: 0;
+    font-size: 12px;
+    font-style: italic;
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+    margin:20px 0 0 0;}
+.contactFirstBox:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 200px;
+    background: #d4d4d4;
+    left: 550px;
+    bottom: 10px;
+}
+
+/** PAGINATION **/
+.pagination {margin:0 auto;}
+.page-item:first-child .page-link {border-radius:50%;}
+.page-item:last-child .page-link {border-radius:50%;}
+.page-link {border-radius:50%;color:#000;margin:0 3px;border-color:#cdc6ae;}
+.page-link:hover {background:#cdc6ae;color:#fff;}
 
 /** START **/
 /*#cover {background: url(../images/cover-bg.jpg) no-repeat center center fixed; background-size: cover;}*/
@@ -121,7 +176,7 @@ font-size:12px;}
 .services-box:hover .box{top: -100%;}
 /**CORPORATE**/
 
-#corporate {background:url(../document/corporate-bg.png), url(../document/blog-bg.png);background-position:right top, left bottom;background-repeat:no-repeat, no-repeat;padding:90px 0 150px 0;}
+#corporate {background:url(../document/corporate-bg.png), url(../document/blog-bg.png) #fff;background-position:right top, left bottom;background-repeat:no-repeat, no-repeat;padding:90px 0 150px 0;}
 
 .corporate-top {position: relative; width:100%;margin: 0 0 45px 0;}
 .corporate-top i:hover {color:#d60c70;cursor:pointer;}
@@ -187,18 +242,38 @@ font-size:12px;}
 .galery-top .corporetTopTitleMain:before{background: #fff}
 
 /** GALLERY ALT **/
-.gallery-title {background:url(../document/hizmetler-title-bg.jpg)!important;}
-.galleryAlt {background:none!important;}
+.gallery-title {background:url(../document/hizmetler-title-bg.jpg) cover center center fixed!important;}
+.galleryAlt {background:url(../document/corporate-bg.png), url(../document/blog-bg.png) #fff!important;background-position:right top, left bottom!important;background-repeat:no-repeat, no-repeat!important;}
 .galleryAlt .card {margin:0 0 25px 0;}
 .galleryAlt .corporetTopTitleMain {color:#cdc6ae;}
 .galleryAlt .corporetTopTitleMain:after {background:#cdc6ae;}
 .galleryAlt .corporetTopTitleMain:before {background:#cdc6ae;}
-.card-subtitleAlt {text-align: center;display: block;padding: 20px 0;text-decoration:none;line-height:22px;}
+.galleryAlt a {position:relative;display:flex;align-items: center;justify-content:center;}
+.galleryAlt .fa-youtube {position:absolute;font-size:45px;color:#fff;}
+.galleryAlt .gallery-box img {max-height:250px;}
+.kutu-animasyonu-ic {
+position:absolute;
+width:100%;
+height:100%;
+background:#000;
+transition: all 0.1s;
+opacity:0.5;
+}
+.galleryAlt a:hover .kutu-animasyonu-ic{
+width:150px;height:100px;top:-500%;
+}
+
+.card-subtitleAlt {text-align: center;display: block;padding: 20px 0;text-decoration:none;line-height:22px;font-family: 'Raleway', sans-serif;font-size:13px;font-weight:bold;letter-spacing: 2px;}
+.galleryText {text-align:center;margin:0 0 25px 0;}
+.galleryText2 img {margin:50px auto;}
 .card-blockAlt {border:3px solid #eeeeee;border-bottom:none;}
-.card-bodyAlt {border:3px solid #eeeeee;border-bottom:none;text-align:center;}
+.card-bodyAlt {border:3px solid #eeeeee;border-bottom:none;text-align:center;cursor:pointer;}
 .card-bodyAlt:hover {background:#cdc6ae;}
 .card-bodyAlt:hover a {color:#fff;}
-.card-bodyAlt a {color:#0a0f09;}
+.card-bodyAlt a {
+    color: #0a0f09;
+    font-family: 'Raleway',sans-serif;
+    font-size: 13px;}
 
 .videoGallery {margin:25px 0 0 0;}
 
@@ -250,12 +325,27 @@ hr{background: #fff;}
     display:flex;
     align-items:center;
 }
+.menuTitleBar {
+    background: url(../document/menu-title-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.iletisimTitleBar {
+    background: url(../document/iletisim-title-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
 .page-title-bar-text {color:#fff;text-align:center;letter-spacing: 3px;font-size:16px;}
 
 .corporate-content-box {padding:10px 0;border:4px solid #eee;}
+.menuContentBoxBg {background: url(../document/logo-menu.png) right top no-repeat;}
 .corporate-content-box img {display:flex;} 
-.corporate-content-box h5 {font-family: 'Raleway' sans-serif;font-size:13px;font-style: italic;font-weight:bold;letter-spacing: 1px;margin:10px 0 0 20px;}
-.corporate-content-box p {margin:0 0 0 20px;line-height:25px;letter-spacing: 1px;}
+.corporate-content-box h5 {font-family: 'Raleway', sans-serif;font-size:13px;font-style: italic;font-weight:bold;letter-spacing: 1px;margin:10px 0 0 20px;}
+.corporate-content-box p {margin:0 0 0 20px;line-height:25px;letter-spacing: 0.5px;font-family:'Raleway', sans-serif;}
 .corporate-content-box hr {margin:30px 25px 0 25px;height:1px;} 
 .corporate-content-box i {margin:15px 0 0 20px;color:#cf5375;cursor:pointer;}
 .corporate-content-box i:hover {color:#000;}
@@ -341,4 +431,5 @@ header .menu ul li.menu-line {display: none;}
 .logo {display:none;}
 .footer-logo::before {display:none;}
 .footer-logo::after {display:none;}
+.contactFirstBox:after {display:none;} 
 }
