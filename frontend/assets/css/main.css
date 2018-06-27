@@ -48,6 +48,9 @@ body,
 
 .textCenter {text-align:center;}
 
+/** PAGINATION **/
+.paginationNav {background:none;border:none;}
+
 /** SEARCH **/
 .ac .fa-search {
 color:#fff;
@@ -210,9 +213,17 @@ font-size:12px;}
 .corporate-top .corporetTopTitleMain{position: relative;color: #cdc6ae;font-size: 20px;font-weight: bold;display: inline-block;font-family: 'Poppins', sans-serif;letter-spacing: 3px;}
 .corporate-top .corporetTopTitleMain:before{content: '';position: absolute;left: -14px;top: 50%;height: 6px;width: 6px;background: #cdc6ae;margin-top: -2.2px;border-radius: 50%;}
 .corporate-top .corporetTopTitleMain:after{content: '';position: absolute;right: -14px;top: 50%;height: 6px;width: 6px;background: #cdc6ae;margin-top: -2.2px;border-radius: 50%;}
-.corporate-top .corporetTopTitleSup{}
-.corporate-top .corporetTopTitleSup span{font-size: 15px;border: 1px solid #bfbfbf;display: inline-block;border-left: none;color: #fff;border-right: none;letter-spacing: 3px;font-family: 'Poppins', sans-serif;}
-.corporate-top .corporetTopTitleSupGal span {color:#000;border:1px solid #000;border-left:none;border-right:none;letter-spacing: 2px;}
+.corporate-top .corporetTopTitleSup{margin:10px 0 0 0;}
+.corporate-top .corporetTopTitleSup span{font-size: 14px;border: 1px solid #bfbfbf;display: inline-block;border-left: none;color: #fff;border-right: none;letter-spacing: 3px;font-family: 'Poppins', sans-serif;padding:1px 0;}
+.corporetTopTitleSupGal {margin:10px 0 0 0;}
+.corporate-top .corporetTopTitleSupGal span {    font-family: 'Poppins', sans-serif;
+    color: #000;
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+    letter-spacing: 2px;
+    padding: 1px 0;
+    font-size: 14px;}
 .card {border-radius:0;margin-bottom:5px;}
 .card:hover {box-shadow:1px 1px 1px #666;}
 .card img {width:100%;height:100%;}
@@ -221,6 +232,7 @@ font-size:12px;}
 .card-subtitle {display: inline-block;font-family: 'Poppins', sans-serif;letter-spacing: 1px;font-size:15px;text-decoration:underline;font-weight:lighter;}
 
 .cardBlog {height:auto!important;margin-bottom:5px;}
+.galleryAlt a {text-decoration:none;color:#000;}
 .card-blockBlog {border:3px solid #eeeeee;}
 .paddingNone {padding:0;}
 /**GALLERY**/
@@ -242,7 +254,6 @@ font-size:12px;}
 .galery-top .corporetTopTitleMain:before{background: #fff}
 
 /** GALLERY ALT **/
-.gallery-title {background:url(../document/hizmetler-title-bg.jpg) cover center center fixed!important;}
 .galleryAlt {background:url(../document/corporate-bg.png), url(../document/blog-bg.png) #fff!important;background-position:right top, left bottom!important;background-repeat:no-repeat, no-repeat!important;}
 .galleryAlt .card {margin:0 0 25px 0;}
 .galleryAlt .corporetTopTitleMain {color:#cdc6ae;}
@@ -264,6 +275,7 @@ width:150px;height:100px;top:-500%;
 }
 
 .card-subtitleAlt {text-align: center;display: block;padding: 20px 0;text-decoration:none;line-height:22px;font-family: 'Raleway', sans-serif;font-size:13px;font-weight:bold;letter-spacing: 2px;}
+.gallery-box a {text-decoration:none;color:#262626;}
 .galleryText {text-align:center;margin:0 0 25px 0;}
 .galleryText2 img {margin:50px auto;}
 .card-blockAlt {border:3px solid #eeeeee;border-bottom:none;}
@@ -316,12 +328,11 @@ hr{background: #fff;}
 /** PAGE TITLE BAR **/
 .page-title-bar {
     width:100%;
-    height:250px;
+    height:150px;
     background: url(../document/kurumsal-title-bg.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
-    background-attachment: fixed;
     display:flex;
     align-items:center;
 }
@@ -330,14 +341,30 @@ hr{background: #fff;}
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 .iletisimTitleBar {
     background: url(../document/iletisim-title-bg.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
-    background-attachment: fixed;
+}
+.hizmetlerTitleBar {
+    background: url(../document/hizmetler-title-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+.galleryTitleBar {
+    background: url(../document/gallery-title-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+.blogTitleBar {
+    background: url(../document/blog-title-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;    
 }
 .page-title-bar-text {color:#fff;text-align:center;letter-spacing: 3px;font-size:16px;}
 
@@ -345,6 +372,7 @@ hr{background: #fff;}
 .menuContentBoxBg {background: url(../document/logo-menu.png) right top no-repeat;}
 .corporate-content-box img {display:flex;} 
 .corporate-content-box h5 {font-family: 'Raleway', sans-serif;font-size:13px;font-style: italic;font-weight:bold;letter-spacing: 1px;margin:10px 0 0 20px;}
+.corporate-content-box h4 {margin:10px 0 0 20px;}
 .corporate-content-box p {margin:0 0 0 20px;line-height:25px;letter-spacing: 0.5px;font-family:'Raleway', sans-serif;}
 .corporate-content-box hr {margin:30px 25px 0 25px;height:1px;} 
 .corporate-content-box i {margin:15px 0 0 20px;color:#cf5375;cursor:pointer;}

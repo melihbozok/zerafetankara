@@ -12,30 +12,29 @@
       
     <!-- DRIFT BOX -->
     <script>
-        "use strict";
-
-        !function() {
-        var t = window.driftt = window.drift = window.driftt || [];
-        if (!t.init) {
-        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-        return function() {
-        var n = Array.prototype.slice.call(arguments);
-        return n.unshift(e), t.push(n), t;
-        };
-        }, t.methods.forEach(function(e) {
-        t[e] = t.factory(e);
-        }), t.load = function(t) {
-        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-        var i = document.getElementsByTagName("script")[0];
-        i.parentNode.insertBefore(o, i);
-        };
-        }
-        }();
-        drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('ahm36h2cd9ah');
+    "use strict";
+    !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+    return function() {
+    var n = Array.prototype.slice.call(arguments);
+    return n.unshift(e), t.push(n), t;
+    };
+    }, t.methods.forEach(function(e) {
+    t[e] = t.factory(e);
+    }), t.load = function(t) {
+    var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+    var i = document.getElementsByTagName("script")[0];
+    i.parentNode.insertBefore(o, i);
+    };
+    }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('ahm36h2cd9ah');
     </script>
       
     <!-- Bootstrap JS -->
@@ -52,16 +51,157 @@
       
     <!--FONTS CSS-->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    
+    <!-- Mobile Menu -->
+      <script type="text/javascript">
+    $(document).ready(function() {
+      $('.mobile-menu span').click(function() {
+        $('nav ul').slideToggle(300);
+      });//end slide toggle
+
+      $(window).resize(function() {		
+            if (  $(window).width() > 300 ) {			
+                $('nav ul').removeAttr('style');
+             }
+        });
+    });
+    </script>
+    <!-- Mobile Menu End -->
       
   </head>
     
   <body>
-    <div class="menuOpen ">
-        
-    </div>
+      
+<!-- Mobile Menu -->    
+<style>
+    .desktop-menu {display:none;}
+    .mobile-menu {
+        padding: 10px 0px;
+        display: none;
+        background: #000;
+        text-align: right;
+    }
+
+    .mobile-menu span {
+        width: 35px;
+        position: relative;
+        right: 20px;
+        cursor: pointer;
+        background: #eee;
+        padding: 2px 8px;
+        border-radius: 3px;
+        font-size:20px;
+
+    }
+
+    nav {
+        background: #171717; 
+        border-top: 3px solid #F9A828;
+    }
+
+    nav ul {
+        text-align: right;
+        margin-right: 20px;
+    }
+
+
+    nav li {
+        display: inline-block;    
+    }
+
+    nav li a {
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+        font-family:'Raleway',sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;    
+    }
+
+    nav li a:hover {
+        color:#eee;
+        text-decoration: none;
+    }      
+    
+    @media (max-width: 767px) {
+        .mobile-menu {
+            display: block;
+        }
+        .desktop-menu {
+            display: block;
+        }
+        .menuAlt {
+            display:none;
+            height:0!important;
+        }
+        .mobile-search {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 25px 0;
+        }
+        .mobile-search input {
+            width:75%;
+            padding:5px 10px;
+            border-radius:25px;
+            font-size:11px;
+            border:1px solid #eee;
+        }
+        .mobile-search i {
+            color: #fff;
+            border-radius: 50%;
+            background: #cf5375;
+            padding: 8px;
+            margin: 0 0 0 5px;
+            border:2px solid #d66483;
+            cursor:pointer;
+        }
+       nav {
+            border: none;
+
+        }
+
+        nav ul {
+            display: none;
+            margin: 0;
+        }
+
+        nav li {
+
+           width: 100%; 
+        }
+
+        nav li a {        
+            padding: 13px;
+            text-align: center;
+        }
+    }
+</style>
+        <div class="mobile-menu">
+            <span><i class="fas fa-bars"></i></span>
+        </div>
+        <div class="desktop-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="#">KURUMSAL</a></li>
+                    <li><a href="#">HİZMETLER</a></li>
+                    <li><a href="#">Menüler</a></li>
+                    <li><a href="#">Galeri</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">İLETİŞİM</a></li>
+                    <li>
+                    <div class="mobile-search"><input type="text" name="search" placeholder="Aramak istediğiniz kelimeyi giriniz.."><i class="fas fa-search"></i></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+      <!-- Mobile Menu End -->
+      
         <section class="headerAlt">
         <div class="row">
-            <div class="header-top">
+            <div class="header-top animated fadeInDown">
                 <a href="index.html"><img src="assets/document/logo2.png"/></a>
             </div>
             <div class="header-bottom">
@@ -89,11 +229,10 @@
                 </div>
             </div>   
         </div>   
-
         </section>
 
         <!-- PAGE TITLE BAR -->
-        <section class="page-title-bar gallery-title">
+        <section class="page-title-bar hizmetlerTitleBar">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 page-title-bar-text">
@@ -114,7 +253,7 @@
             <div class="corporate-bottom animated fadeInLeft">
                 <div class="row corporate-content-box">
                   <div class="col-md-4 col-sm-12">
-                    <img src="assets/document/hizmet-detay-img.jpg"/>
+                    <img src="assets/document/hizmet-detay-img.jpg" class="img-fluid"/>
                   </div>
                   <div class="col-md-8">
                       <h5>Tüm çiftlerin hayalidir, en güzel düğünün kendi düğünü olması... </h5><br />
@@ -333,21 +472,5 @@ No: 7/6 AK Plaza Söğütözü / ANKARA</p>
 
         })
     </script>  
-      
-    <!-- VIDEO -->  
-    <script>
-        var video = document.getElementById("myVideo");
-        var btn = document.getElementById("myBtn");
-
-        function myFunction() {
-        if (video.paused) {
-        video.play();
-        btn.innerHTML = '<i class="fas fa-pause">';
-        } else {
-        video.pause();
-        btn.innerHTML = '<i class="fas fa-play">';
-        }
-        }
-    </script>
   </body>
 </html>

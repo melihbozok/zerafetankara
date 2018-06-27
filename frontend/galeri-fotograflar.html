@@ -50,15 +50,154 @@
     <!--FONTS CSS-->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
       
+    <!-- Mobile Menu -->
+      <script type="text/javascript">
+    $(document).ready(function() {
+      $('.mobile-menu span').click(function() {
+        $('nav ul').slideToggle(300);
+      });//end slide toggle
+
+      $(window).resize(function() {		
+            if (  $(window).width() > 300 ) {			
+                $('nav ul').removeAttr('style');
+             }
+        });
+    });
+    </script>
+    <!-- Mobile Menu End -->    
+      
   </head>
     
   <body>
-    <div class="menuOpen ">
-        
-    </div>
+      
+      <style>
+    .desktop-menu {display:none;}
+    .mobile-menu {
+        padding: 10px 0px;
+        display: none;
+        background: #000;
+        text-align: right;
+    }
+
+    .mobile-menu span {
+        width: 35px;
+        position: relative;
+        right: 20px;
+        cursor: pointer;
+        background: #eee;
+        padding: 2px 8px;
+        border-radius: 3px;
+        font-size:20px;
+
+    }
+
+    nav {
+        background: #171717; 
+        border-top: 3px solid #F9A828;
+    }
+
+    nav ul {
+        text-align: right;
+        margin-right: 20px;
+    }
+
+
+    nav li {
+        display: inline-block;    
+    }
+
+    nav li a {
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+        font-family:'Raleway',sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;    
+    }
+
+    nav li a:hover {
+        color:#eee;
+        text-decoration: none;
+    }      
+    
+    @media (max-width: 767px) {
+        .mobile-menu {
+            display: block;
+        }
+        .desktop-menu {
+            display: block;
+        }
+        .menuAlt {
+            display:none;
+            height:0!important;
+        }
+        .mobile-search {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 25px 0;
+        }
+        .mobile-search input {
+            width:75%;
+            padding:5px 10px;
+            border-radius:25px;
+            font-size:11px;
+            border:1px solid #eee;
+        }
+        .mobile-search i {
+            color: #fff;
+            border-radius: 50%;
+            background: #cf5375;
+            padding: 8px;
+            margin: 0 0 0 5px;
+            border:2px solid #d66483;
+            cursor:pointer;
+        }
+       nav {
+            border: none;
+
+        }
+
+        nav ul {
+            display: none;
+            margin: 0;
+        }
+
+        nav li {
+
+           width: 100%; 
+        }
+
+        nav li a {        
+            padding: 13px;
+            text-align: center;
+        }
+    }
+</style>
+        <div class="mobile-menu">
+            <span><i class="fas fa-bars"></i></span>
+        </div>
+        <div class="desktop-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="#">KURUMSAL</a></li>
+                    <li><a href="#">HİZMETLER</a></li>
+                    <li><a href="#">Menüler</a></li>
+                    <li><a href="#">Galeri</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">İLETİŞİM</a></li>
+                    <li>
+                    <div class="mobile-search"><input type="text" name="search" placeholder="Aramak istediğiniz kelimeyi giriniz.."><i class="fas fa-search"></i></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+      <!-- Mobile Menu End -->
         <section class="headerAlt">
         <div class="row">
-            <div class="header-top">
+            <div class="header-top animated fadeInDown">
                 <a href="index.html"><img src="assets/document/logo2.png"/></a>
             </div>
             <div class="header-bottom">
@@ -67,7 +206,7 @@
                         <ul>
                             <li><a href="index.html"><i class="fa fa-home"></i></a></li>
                             <li><a href="kurumsal.html">Kurumsal</a></li>
-                            <li><a href="hizmet.html">HİZMETLER<span class="sr-only">(current)</span></a></li>
+                            <li><a href="hizmetler.html">HİZMETLER<span class="sr-only">(current)</span></a></li>
                             <li><a href="menu.html">Menüler</a></li>
                             <li><a href="galeri-fotograflar.html">GALERİ</a></li>
                             <li><a href="blog.html">Blog</a></li>
@@ -90,7 +229,7 @@
         </section>
 
         <!-- PAGE TITLE BAR -->
-        <section class="page-title-bar gallery-title">
+        <section class="page-title-bar galleryTitleBar">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 page-title-bar-text">
@@ -136,49 +275,49 @@ deneyimlerimiz bu konudaki en büyük güvenimizdir.</p>
                     </div>
                     <div class="col-md-3 col-sm-6 gallery-box">
                         <div class="card">
-                            <a rel="example_group" href="assets/document/gallery-img-01-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-01.jpg" />
+                            <a rel="example_group" href="assets/document/gallery-img-02-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-02.jpg" />
                             <div class="kutu-animasyonu-ic"></div>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 gallery-box">
                         <div class="card">
-                            <a rel="example_group" href="assets/document/gallery-img-01-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-01.jpg" />
+                            <a rel="example_group" href="assets/document/gallery-img-03-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-03.jpg" />
                             <div class="kutu-animasyonu-ic"></div>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 gallery-box">
                         <div class="card">
-                            <a rel="example_group" href="assets/document/gallery-img-01-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-01.jpg" />
+                            <a rel="example_group" href="assets/document/gallery-img-04-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-04.jpg" />
                             <div class="kutu-animasyonu-ic"></div>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 gallery-box">
                         <div class="card">
-                            <a rel="example_group" href="assets/document/gallery-img-01-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-01.jpg" />
+                            <a rel="example_group" href="assets/document/gallery-img-05-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-05.jpg" />
                             <div class="kutu-animasyonu-ic"></div>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 gallery-box">
                         <div class="card">
-                            <a rel="example_group" href="assets/document/gallery-img-01-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-01.jpg" />
+                            <a rel="example_group" href="assets/document/gallery-img-06-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-06.jpg" />
                             <div class="kutu-animasyonu-ic"></div>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 gallery-box">
                         <div class="card">
-                            <a rel="example_group" href="assets/document/gallery-img-01-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-01.jpg" />
+                            <a rel="example_group" href="assets/document/gallery-img-07-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-07.jpg" />
                             <div class="kutu-animasyonu-ic"></div>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 gallery-box">
                         <div class="card">
-                            <a rel="example_group" href="assets/document/gallery-img-01-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-01.jpg" />
+                            <a rel="example_group" href="assets/document/gallery-img-08-b.jpg" title="Zerafet Ankara Fotoğraf Galerisi"><img alt="" src="assets/document/gallery-img-08.jpg" />
                             <div class="kutu-animasyonu-ic"></div>
                             </a>
                         </div>
@@ -186,7 +325,7 @@ deneyimlerimiz bu konudaki en büyük güvenimizdir.</p>
                     </div>
                 </div>
             <!-- PAGINATION -->
-            <nav aria-label="Page navigation example">
+            <nav class="paginationNav" aria-label="Page navigation example">
                 <ul class="pagination justify-content-center">
                     <li class="page-item">
                         <a class="page-link" href="#" aria-label="Previous">
