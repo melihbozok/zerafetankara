@@ -5,39 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Zerafet Ankara | Kurumsal</title>
+    <link rel="shortcut icon" type="image/png" href="assets/document/favicon.png"/>
 
     <!--MELİH BOZOK 2018-->
-    
-    <!-- http://webmastertakimi.com/html-and-css-and-javascript/378-css-arama-formu-stilleri-search-form.html -->  
-      
-    <!-- DRIFT BOX -->
-    <script>
-        "use strict";
 
-        !function() {
-        var t = window.driftt = window.drift = window.driftt || [];
-        if (!t.init) {
-        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-        return function() {
-        var n = Array.prototype.slice.call(arguments);
-        return n.unshift(e), t.push(n), t;
-        };
-        }, t.methods.forEach(function(e) {
-        t[e] = t.factory(e);
-        }), t.load = function(t) {
-        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-        var i = document.getElementsByTagName("script")[0];
-        i.parentNode.insertBefore(o, i);
-        };
-        }
-        }();
-        drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('ahm36h2cd9ah');
-    </script>
-      
     <!-- Bootstrap JS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -72,7 +43,6 @@
   </head>
     
   <body>
-
       <!-- Mobile Menu -->    
 <style>
     .desktop-menu {display:none;}
@@ -186,170 +156,88 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Anasayfa</a></li>
-                    <li><a href="#">KURUMSAL</a></li>
-                    <li><a href="#">HİZMETLER</a></li>
-                    <li><a href="#">Menüler</a></li>
-                    <li><a href="#">Galeri</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">İLETİŞİM</a></li>
+                    <li><a href="kurumsal.html">KURUMSAL</a></li>
+                    <li><a href="hizmetler.html">HİZMETLER</a></li>
+                    <li><a href="menu.html">Menüler</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="iletisim.html">İLETİŞİM</a></li>
                     <li>
                     <div class="mobile-search"><input type="text" name="search" placeholder="Aramak istediğiniz kelimeyi giriniz.."><i class="fas fa-search"></i></div>
                     </li>
                 </ul>
             </nav>
         </div>
-      <!-- Mobile Menu End -->
       
-      <section class="headerAlt">
-        <div class="row">
-            <div class="header-top animated fadeInDown">
-                <a href="index.html"><img src="assets/document/logo2.png"/></a>
-            </div>
-            <div class="header-bottom">
-                <div class="col-md-12 col-sm-6">
-                    <div class="menu menuAlt animated">
-                        <ul>
-                            <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                            <li><a href="kurumsal.html">Kurumsal</a></li>
-                            <li><a href="hizmetler.html">HİZMETLER<span class="sr-only">(current)</span></a></li>
-                            <li><a href="menu.html">Menüler</a></li>
-                            <li><a href="galeri-fotograflar.html">GALERİ</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="iletisim.html">İLETİŞİM</a></li>
-                            <li class="noAfter"><!-- SEARCH -->
-                                <div class="ac"><i class="fas fa-search"></i></div>
-                                <div class="search-group searchAlt " style="display: none">
-                                    <div class="search-group-left">
-                                    <input type="text" name="search" placeholder="Aramak istediğiniz kelimeyi giriniz..">
+        <section class="headerAlt">
+            <div class="row">
+                <div class="header-top animated fadeInDown">
+                    <a href="index.html"><img src="assets/document/logo2.png"/></a>
+                </div>
+                <div class="header-bottom">
+                    <div class="col-md-12 col-sm-6">
+                        <div class="menu menuAlt animated">
+                            <ul>
+                                <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                                <li><a href="kurumsal.html">Kurumsal</a></li>
+                                <li><a href="hizmetler.html">HİZMETLER<span class="sr-only">(current)</span></a></li>
+                                <li><a href="menu.html">Menüler</a></li>
+                                <li><a href="galeri.html">GALERİ</a></li>
+                                <li><a href="blog.html" class="selectedMenu">Blog</a></li>
+                                <li><a href="iletisim.html">İLETİŞİM</a></li>
+                                <li class="noAfter">
+                                    <!-- SEARCH -->
+                                    <div class="ac"><i class="fas fa-search"></i></div>
+                                    <div class="search-group searchAlt" style="display: none">
+                                        <div class="search-group-left">
+                                            <input type="text" name="search" placeholder="Aramak istediğiniz kelimeyi giriniz..">
+                                        </div>
+                                        <div class="search-group-right"><i class="fas fa-times kapa"></i></div>
                                     </div>
-                                    <div class="search-group-right"><i class="fas fa-times kapa"></i></div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>   
-        </div>   
-
+            </div>
         </section>
 
         <!-- PAGE TITLE BAR -->
-        <section class="page-title-bar hizmetlerTitleBar">
+        <section class="page-title-bar blogTitleBar">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 page-title-bar-text">
-                        <p>MENÜLERİMİZ</p>
+                        <p>BLOG</p>
                     </div>
                 </div>  
             </div>
         </section>
       
-      <!--GALLERY-->
-      <section id="gallery" class="galleryAlt">
-            <div class="container">
-                <div class="corporate-top galery-top text-center">
-                    <div class="corporetTopTitleMain">ZERAFET LEZZETLERİ</div>
-                </div>
-                <div class="gallery-sub animated fadeInRight">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6 gallery-box">
-                            <a href="menu-detay.html">
-                                <div class="card">
-                                    <img src="assets/document/menu-03.jpg" />
-                                    <div class="card-block card-blockAlt">
-                                        <p class="card-subtitle card-subtitleAlt">MENÜ 01</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-box">
-                            <a href="menu-detay.html">
-                            <div class="card">
-                                <img src="assets/document/menu-02.jpg" />
-                                <div class="card-block card-blockAlt">
-                                    <p class="card-subtitle card-subtitleAlt">MENÜ 02</p>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-box">
-                           <a href="menu-detay.html">
-                            <div class="card">
-                                <img src="assets/document/menu-01.jpg" />
-                                <div class="card-block card-blockAlt">
-                                    <p class="card-subtitle card-subtitleAlt">MENÜ 03</p>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-box">
-                           <a href="menu-detay.html">
-                            <div class="card">
-                                <img src="assets/document/menu-08.jpg" />
-                                <div class="card-block card-blockAlt">
-                                    <p class="card-subtitle card-subtitleAlt">MENÜ 04</p>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-box">
-                           <a href="menu-detay.html">
-                            <div class="card">
-                                <img src="assets/document/menu-04.jpg" />
-                                <div class="card-block card-blockAlt">
-                                    <p class="card-subtitle card-subtitleAlt">MENÜ 05</p>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-box">
-                           <a href="menu-detay.html">
-                            <div class="card">
-                                <img src="assets/document/menu-05.jpg" />
-                                <div class="card-block card-blockAlt">
-                                    <p class="card-subtitle card-subtitleAlt">MENÜ 06</p>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-box">
-                           <a href="menu-detay.html">
-                            <div class="card">
-                                <img src="assets/document/menu-06.jpg" />
-                                <div class="card-block card-blockAlt">
-                                    <p class="card-subtitle card-subtitleAlt">HAFİF İKRAMLI NİKAH KOKTEYLİ</p>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-box">
-                           <a href="menu-detay.html">
-                            <div class="card">
-                                <img src="assets/document/menu-07.jpg" />
-                                <div class="card-block card-blockAlt">
-                                    <p class="card-subtitle card-subtitleAlt">ARA SICAKLI NİKAH KOKTEYLİ</p>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-box">
-                           <a href="menu-detay.html">
-                            <div class="card">
-                                <img src="assets/document/menu-09.jpg" />
-                                <div class="card-block card-blockAlt">
-                                    <p class="card-subtitle card-subtitleAlt">KINA MENÜSÜ</p>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
+      <!--CORPORATE-->
+      <section id="corporate">
+        <div class="container">
+            <div class="corporate-bottom animated fadeInLeft">
+                <div class="row corporate-content-box">
+                  <div class="col-md-4 col-sm-12">
+                    <img class="img-fluid" src="assets/document/blog-img-05.jpg"/>
+                  </div>
+                  <div class="col-md-8">
+                      <h4>''Zerafet Ankara Yenilendi''</h4><br />
+                    <ul class="blogListNone">
+                        <li><b><em class="pink">Yenilenen zerafetankara.com sizlerle..</em></b><br /> <br />Tablet, telefon ve bilgisayarlarda sorunsuz çalışan internet sitemiz yayına girmiştir. İnternet sitemizi sizlere sunmaktan dolayı mutluluk duyuyoruz. Amacımız mesleki bilgi ve tecrübe paylaşımını biraz olsun çoğaltmak ve eksikleri kapatmaktır. zerafetankara.com sizlere hizmet verebilmek adına yoğun çalışmalar sonucunda <b><u>31.07.2017</u></b> 'de yayın hayatına başlamıştır.<br /><br />
+
+İçeriklerin, sizlerinde desteğiyle çoğalmasını umut ediyoruz ve sizlere faydalı olabilecek şekilde gelişmesini diliyoruz.</li><br />
+                    </ul>
+                      <hr>
+                    <p>  
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    </p>
+                  </div>
                 </div>
             </div>
-            <div class="gallery-bottom text-center">
-                <div class="gallery-bottom-icon">
-                    <i class="fa fa-angle-down"></i>
-                </div>
-            </div>
+        </div>
       </section>
      
 
@@ -446,6 +334,52 @@ No: 7/6 AK Plaza Söğütözü / ANKARA</p>
             <p>© 2018 <span>Zerafet Ankara</span> | Tüm Hakları Saklıdır.</p>  
         </div>
       </section>
+      
+              <!-- AÇILIR KUTU -->
+<div class="kapali animated bounceInDown">
+    <div class="form randevuKutusuForm">
+        <h6 class="text-center pink">RANDEVU OLUŞTURUN</h6>
+        <hr/>
+        <form>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Ad Soyad *" />
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Telefon *" />
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="E-posta *" />
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="date" class="form-control" placeholder="Tarih *" />
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Mesajınız *"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-12 justify-content-center">
+                    <div class="form-group">
+                        <button class="form-control buton">GÖNDER</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<button class="acik btn btn-secondary animated lightSpeedIn">
+        <i class="far fa-calendar-alt"></i>Randevu Al
+        </button>
+<!-- AÇILIR KUTU END -->
       
     <!-- FANCYBOX -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
@@ -552,21 +486,14 @@ No: 7/6 AK Plaza Söğütözü / ANKARA</p>
 
         })
     </script>  
-      
-    <!-- VIDEO -->  
+    
+            
+        <!-- AÇILIR KUTU -->
     <script>
-        var video = document.getElementById("myVideo");
-        var btn = document.getElementById("myBtn");
-
-        function myFunction() {
-        if (video.paused) {
-        video.play();
-        btn.innerHTML = '<i class="fas fa-pause">';
-        } else {
-        video.pause();
-        btn.innerHTML = '<i class="fas fa-play">';
-        }
-        }
+                $(".acik").click(function() {
+                $(".kapali").slideToggle("fast");
+                });
     </script>
+    
   </body>
 </html>

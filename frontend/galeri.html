@@ -6,38 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Zerafet Ankara | Kurumsal</title>
+    <link rel="shortcut icon" type="image/png" href="assets/document/favicon.png"/>
 
     <!--MELİH BOZOK 2018-->
-
-    <!-- DRIFT BOX -->
-    <script>
-        "use strict";
-        ! function() {
-            var t = window.driftt = window.drift = window.driftt || [];
-            if (!t.init) {
-                if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
-                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
-                    t.factory = function(e) {
-                        return function() {
-                            var n = Array.prototype.slice.call(arguments);
-                            return n.unshift(e), t.push(n), t;
-                        };
-                    }, t.methods.forEach(function(e) {
-                        t[e] = t.factory(e);
-                    }), t.load = function(t) {
-                        var e = 3e5,
-                            n = Math.ceil(new Date() / e) * e,
-                            o = document.createElement("script");
-                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-                        var i = document.getElementsByTagName("script")[0];
-                        i.parentNode.insertBefore(o, i);
-                    };
-            }
-        }();
-        drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('ahm36h2cd9ah');
-
-    </script>
 
     <!-- Bootstrap JS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -163,12 +134,12 @@
         <nav>
             <ul>
                 <li><a href="index.html">Anasayfa</a></li>
-                <li><a href="#">KURUMSAL</a></li>
-                <li><a href="#">HİZMETLER</a></li>
-                <li><a href="#">Menüler</a></li>
-                <li><a href="#">Galeri</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">İLETİŞİM</a></li>
+                <li><a href="kurumsal.html">KURUMSAL</a></li>
+                <li><a href="hizmetler.html">HİZMETLER</a></li>
+                <li><a href="menu.html">Menüler</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="iletisim.html">İLETİŞİM</a></li>
                 <li>
                     <div class="mobile-search"><input type="text" name="search" placeholder="Aramak istediğiniz kelimeyi giriniz.."><i class="fas fa-search"></i></div>
                 </li>
@@ -178,8 +149,8 @@
     <!-- Mobile Menu End -->
     <section class="headerAlt">
         <div class="row">
-            <div class="header-top">
-                <a href="galeri-video.html"><img src="assets/document/logo2.png"/></a>
+            <div class="header-top animated rotateIn">
+                <a href="index.html"><img src="assets/document/logo2.png"/></a>
             </div>
             <div class="header-bottom">
                 <div class="col-md-12 col-sm-6">
@@ -189,7 +160,7 @@
                             <li><a href="kurumsal.html">Kurumsal</a></li>
                             <li><a href="hizmetler.html">HİZMETLER<span class="sr-only">(current)</span></a></li>
                             <li><a href="menu.html">Menüler</a></li>
-                            <li><a href="galeri-fotograflar.html">GALERİ</a></li>
+                            <li><a href="galeri.html" class="selectedMenu">GALERİ</a></li>
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="iletisim.html">İLETİŞİM</a></li>
                             <li class="noAfter">
@@ -224,109 +195,27 @@
     <!--GALLERY-->
     <section id="gallery" class="galleryAlt">
         <div class="container">
-            <div class="corporate-top galery-top text-center">
-                <div class="corporetTopTitleMain">VIDEOLAR</div>
-            </div>
-
-            <!-- TEXT -->
-            <div class="container galleryText">
-                <div class="corporate-bottom animated fadeInLeft">
-                    <div class="row corporate-content-box">
-                        <div class="col-md-12">
-                            <h5><em class="pink">Zerafet Ankara</em> Balo Salonu olarak</h5>
-                            <p>düğün ve organizasyon sektörüne farklı bir bakış açısı getirmek istiyoruz. Siz ve davetlileriniz bizim misafirimizsiniz. Size ve davetlilerinize misafir ağırlama sanatını yaşatmayı amaç ediyoruz. Estetik ve zarafetin buluştuğu , özel tasarımlar ve mimari dokunuşların izlerini bulabileceğiniz salonumuz yaklaşık 800 kişilik bir kapasiteye sahiptir. Alanında tecrübeli ve uzman olan mutfak ekibimiz ile size ve konuklarınıza Türk ve dünya mutfağından eşsiz lezzetleri sunmayı amaçlıyoruz. Zerafet Ankara olarak amacımız Misafir Ağırlamayı sanata dönüştürmektir Sektördeki 20 yıllık tecrübe ve deneyimlerimiz bu konudaki en büyük güvenimizdir.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="gallery-sub animated fadeInRight">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6 gallery-box">
+                    <div class="col-md-6 col-sm-6 gallery-box">
                         <div class="card">
-                            <a class="video" title="Zerafet Ankara" href="https://www.youtube.com/watch?v=6wwDU4cuBG4">
-                                <img src="assets/document/hizmetler-img-01.jpg"/>
-                                <i class="fab fa-youtube"></i>
+                            <a href="galeri-fotograflar.html" title="Fotoğraf Galerisi">
+                                <img src="assets/document/fotograf-galerisi-img.jpg"/>
+                                <i class="fas fa-image"></i>
                             </a>
                             <div class="card-block card-blockAlt">
-                                <p class="card-subtitle card-subtitleAlt">ZERAFET ANKARA MUHTEŞEM BİR DÜĞÜN</p>
+                                <p class="card-subtitle card-subtitleAlt">FOTOĞRAF GALERİSİ</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 gallery-box">
+                    <div class="col-md-6 col-sm-6 gallery-box">
                         <div class="card">
-                            <a class="video" title="Zerafet Ankara" href="https://www.youtube.com/watch?v=6wwDU4cuBG4">
-                                <img src="assets/document/video-02.jpg"/>
+                            <a href="galeri-video.html" title="Video Galerisi">
+                                <img src="assets/document/video-galeri-img.jpg"/>
                                 <i class="fab fa-youtube"></i>
                             </a>
                             <div class="card-block card-blockAlt">
-                                <p class="card-subtitle card-subtitleAlt">ZERAFET ANKARA MUHTEŞEM BİR DÜĞÜN</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-box">
-                        <div class="card">
-                            <a class="video" title="Zerafet Ankara" href="https://www.youtube.com/watch?v=6wwDU4cuBG4">
-                                <img src="assets/document/video-03.jpg"/>
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <div class="card-block card-blockAlt">
-                                <p class="card-subtitle card-subtitleAlt">ZERAFET ANKARA MUHTEŞEM BİR DÜĞÜN</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-box">
-                        <div class="card">
-                            <a class="video" title="Zerafet Ankara" href="https://www.youtube.com/watch?v=6wwDU4cuBG4">
-                                <img src="assets/document/video-04.jpg"/>
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <div class="card-block card-blockAlt">
-                                <p class="card-subtitle card-subtitleAlt">ZERAFET ANKARA MUHTEŞEM BİR DÜĞÜN</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-box">
-                        <div class="card">
-                            <a class="video" title="Zerafet Ankara" href="https://www.youtube.com/watch?v=6wwDU4cuBG4">
-                                <img src="assets/document/video-05.jpg"/>
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <div class="card-block card-blockAlt">
-                                <p class="card-subtitle card-subtitleAlt">ZERAFET ANKARA MUHTEŞEM BİR DÜĞÜN</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-box">
-                        <div class="card">
-                            <a class="video" title="Zerafet Ankara" href="https://www.youtube.com/watch?v=6wwDU4cuBG4">
-                                <img src="assets/document/video-06.jpg"/>
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <div class="card-block card-blockAlt">
-                                <p class="card-subtitle card-subtitleAlt">ZERAFET ANKARA MUHTEŞEM BİR DÜĞÜN</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-box">
-                        <div class="card">
-                            <a class="video" title="Zerafet Ankara" href="https://www.youtube.com/watch?v=6wwDU4cuBG4">
-                                <img src="assets/document/video-07.jpg"/>
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <div class="card-block card-blockAlt">
-                                <p class="card-subtitle card-subtitleAlt">ZERAFET ANKARA MUHTEŞEM BİR DÜĞÜN</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-box">
-                        <div class="card">
-                            <a class="video" title="Zerafet Ankara" href="https://www.youtube.com/watch?v=6wwDU4cuBG4">
-                                <img src="assets/document/video-08.jpg"/>
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <div class="card-block card-blockAlt">
-                                <p class="card-subtitle card-subtitleAlt">ZERAFET ANKARA MUHTEŞEM BİR DÜĞÜN</p>
+                                <p class="card-subtitle card-subtitleAlt">VIDEO GALERİSİ</p>
                             </div>
                         </div>
                     </div>
@@ -429,6 +318,52 @@
             <p>© 2018 <span>Zerafet Ankara</span> | Tüm Hakları Saklıdır.</p>
         </div>
     </section>
+    
+    <!-- AÇILIR KUTU -->
+        <div class="kapali animated bounceInDown">
+            <div class="form randevuKutusuForm">
+                <h6 class="text-center pink">RANDEVU OLUŞTURUN</h6>
+                <hr/>
+                <form>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Ad Soyad *" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Telefon *" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="E-posta *" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="date" class="form-control" placeholder="Tarih *" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Mesajınız *"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 justify-content-center">
+                            <div class="form-group">
+                                <button class="form-control buton">GÖNDER</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button class="acik btn btn-secondary animated lightSpeedIn">
+        <i class="far fa-calendar-alt"></i>Randevu Al
+        </button>
+        <!-- AÇILIR KUTU END -->
 
     <!-- FANCYBOX VIDEO -->
     <script type="text/javascript">
@@ -558,7 +493,13 @@
         })
 
     </script>
-
+    
+    <!-- AÇILIR KUTU -->
+    <script>
+                $(".acik").click(function() {
+                $(".kapali").slideToggle("fast");
+                });
+    </script>
 </body>
 
 </html>
